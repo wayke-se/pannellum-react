@@ -1,0 +1,11 @@
+node_modules/
+build/
+.DS_STORE
+.cache/
+dev/
+.npmrc
+.env
+pkg
+dist
+/deploy.py
+/deploy-prod.py

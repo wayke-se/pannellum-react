@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "module": "esNext",
+    "target": "es2020",
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "strict": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./src/@types"]
+  }
+}

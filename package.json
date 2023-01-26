@@ -1,0 +1,44 @@
+{
+  "name": "@wayke-se/pannellum-react",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "node ./esbuild/start.js",
+    "build": "npm run clean && node ./esbuild/lib.js",
+    "clean": "rimraf dist",
+    "test": "npm run lint && npm run typecheck",
+    "typecheck": "tsc -noEmit",
+    "lint": "eslint --ext .tsx,.ts 'src'",
+    "lint:fix": "eslint --ext .tsx,.ts 'src' --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16 || ^17 || ^18"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.4",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "esbuild": "^0.17.2",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "npm-dts": "^1.3.12",
+    "prettier": "^2.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^4.1.1",
+    "typescript": "^4.4.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
