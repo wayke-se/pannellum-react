@@ -13,6 +13,7 @@ npm install @wayke-se/pannellum-react
 ```
 
 ```js
+import '@wayke-se/pannellum-react/dist/index.css';
 import Pannellum from '@wayke-se/pannellum-react';
 
 ...
