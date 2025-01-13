@@ -70,7 +70,7 @@ type PannellumProps = PannellumSettingsProps & {
 };
 
 const Pannellum = (props: PannellumProps) => {
-  const panoramaRef = useRef<PannellumContext | undefined>();
+  const panoramaRef = useRef<PannellumContext | undefined>(undefined);
   const [id] = useState(
     () => props.id || `pannellum-${Math.random().toString(36).substring(2, 9)}`
   );
