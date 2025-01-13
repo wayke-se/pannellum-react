@@ -7,7 +7,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "node ./esbuild/start.js",
+    "start": "node ./esbuild/start.js", 
     "build": "npm run clean && node ./esbuild/lib.js",
     "clean": "rimraf dist",
     "test": "npm run lint && npm run typecheck",
