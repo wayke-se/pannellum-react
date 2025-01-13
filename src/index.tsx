@@ -5,8 +5,8 @@ import './pannellum/css/style-textInfo.css';
 import './pannellum/js/libpannellum.js';
 import './pannellum/js/pannellum.js';
 import './pannellum/js/RequestAnimationFrame';
-import { PannellumSettingsProps } from '../@types/PannellumSettingsProps';
-import { PannellumContext } from '../@types/PannellumContext';
+import type { PannellumContext } from '../@types/PannellumContext';
+import type { PannellumSettingsProps } from '../@types/PannellumSettingsProps';
 
 declare global {
   interface Window {
@@ -72,7 +72,7 @@ type PannellumProps = PannellumSettingsProps & {
 const Pannellum = (props: PannellumProps) => {
   const panoramaRef = useRef<PannellumContext | undefined>(undefined);
   const [id] = useState(
-    () => props.id || `pannellum-${Math.random().toString(36).substring(2, 9)}`
+    () => props.id || `pannellum-${Math.random().toString(36).substring(2, 9)}`,
   );
 
   const renderImage = () => {

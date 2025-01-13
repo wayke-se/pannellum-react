@@ -1,0 +1,79 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto"
+  },
+  "organizeImports": { "enabled": true },
+  "files": {
+    "include": ["*.ts", "*.tsx", "*.js", "*.json"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "security": {
+        "noDangerouslySetInnerHtml": "off",
+        "noDangerouslySetInnerHtmlWithChildren": "off"
+      },
+      "suspicious": {
+        "noExplicitAny": "off",
+        "noAsyncPromiseExecutor": "off",
+        "noArrayIndexKey": "off",
+        "noRedeclare": "off",
+        "noAssignInExpressions": "off",
+        "noImplicitAnyLet": "off",
+        "noConsoleLog": "error"
+      },
+      "style": {
+        "noNonNullAssertion": "off",
+        "useEnumInitializers": "off",
+        "noParameterAssign": "off",
+        "noUselessElse": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off",
+        "noUnsafeOptionalChaining": "off",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "complexity": {
+        "noForEach": "off",
+        "useOptionalChain": "off",
+        "noExtraBooleanCast": "off"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "off",
+        "useSemanticElements": "off"
+      }
+    },
+    "ignore": [
+      "dist/**/*",
+      "**/*.js"
+    ]
+  },
+  "javascript": {
+    "jsxRuntime": "reactClassic",
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSpacing": true,
+      "bracketSameLine": false,
+      "quoteStyle": "single",
+      "attributePosition": "auto"
+    },
+    "globals": ["google"]
+  },
+  "overrides": [{ "include": ["*.ts", "*.tsx"] }]
+}

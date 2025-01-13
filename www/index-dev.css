@@ -13,7 +13,7 @@
     "Liberation Sans",
     Arial,
     sans-serif;
-  background: #f4f4f4 url(./background-3EOGCZV7.svg) repeat;
+  background: #f4f4f4 url("./background-3EOGCZV7.svg") repeat;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -36,14 +36,14 @@
 }
 .pnlm-grab {
   cursor: grab;
-  cursor: url(./grab-SRLM7ZAO.svg) 12 8, default;
+  cursor: url("./grab-SRLM7ZAO.svg") 12 8, default;
 }
 .pnlm-grabbing {
   cursor: grabbing;
-  cursor: url(./grabbing-2BC6FQDE.svg) 12 8, default;
+  cursor: url("./grabbing-2BC6FQDE.svg") 12 8, default;
 }
 .pnlm-sprite {
-  background-image: url(./sprites-56IFOPXK.svg);
+  background-image: url("./sprites-56IFOPXK.svg");
 }
 .pnlm-container:-moz-full-screen {
   height: 100% !important;
@@ -384,7 +384,7 @@ div.pnlm-tooltip:hover span:after {
   right: 4px;
   bottom: 4px;
   border-radius: 25px;
-  background-image: url(./compass-WZ67RBWC.svg);
+  background-image: url("./compass-WZ67RBWC.svg");
   cursor: default;
   display: none;
 }

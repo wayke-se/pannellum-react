@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
-
+import { createRequire } from 'module';
 import pkg from 'npm-dts';
 const { Generator } = pkg;
 
 import * as esbuild from 'esbuild';
-import Json from '../package.json' assert { type: 'json' };
+const packageJSON = createRequire(import.meta.url)('../package.json');
 
-const { dependencies, peerDependencies } = Json;
+const { dependencies, peerDependencies } = packageJSON;
 
 import Common from './common.js';
 

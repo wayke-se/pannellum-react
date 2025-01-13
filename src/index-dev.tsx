@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     const root = createRoot(element);
     root.render(
       <Pannellum
-        id={`react-pannellum`}
+        id="react-pannellum"
         panorama="./assets/360.jpg"
         hfov={120}
         autoLoad
@@ -17,7 +17,7 @@ window.addEventListener('load', () => {
           width: '2000px',
           height: '1000px',
         }}
-      />
+      />,
     );
   }
 });
